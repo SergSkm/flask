@@ -1,0 +1,16 @@
+<!-- about.html-->
+
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h1>Enter the keyword below</h1>
+  <p class="lead">Here should be keyword search</p>
+</div>
+
+boxes = ['1234',' 12341234', 'sdfsd']
+{% for box in boxes %}
+    {% include "render_box.html" %}
+{% endfor %}
+
+{% endblock %}
